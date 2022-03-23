@@ -1,0 +1,14 @@
+.tableStyles{
+	text-align: center;
+	padding: 0 50px;
+	background: #E5E5E5;
+	border-bottom: 1px solid #BBBBBB;
+}
+
+.colum{
+	text-align: center;
+	background: white;
+}
+body{
+	background-color: green;
+}

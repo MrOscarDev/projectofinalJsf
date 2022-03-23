@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+	
+    <h:head>
+    	<title>PRINCIPAL</title>
+    	<h:outputStylesheet library="css" name="styles.css"></h:outputStylesheet>
+    </h:head>
+    
+    
+    <h:body bgcolor="white">
+    
+    <p:panel id="pnlindex" header="Menu Principal">
+    <h:dataTable id="tblIndex" var="employe" value="#{empleadoController.employes}" headerClass="tableStyles" rowClasses="colum">
+    		<h:column>
+    			<f:facet name="header" >Nombre</f:facet>
+    				<h:outputText value="#{employe.nombreEmpleado}"></h:outputText>
+    			
+    			
+    		</h:column>
+    		<h:column>
+    			<f:facet name="header">Primer Apellido</f:facet>
+    			<h:outputText value="#{employe.primerApellidoEmpleado}"></h:outputText>
+    			
+    		</h:column>
+    		<h:column>
+    			<f:facet name="header">Segundo apellido</f:facet>
+    			<h:outputText value="#{employe.segundoApellidoEmpleado}"></h:outputText>
+    			
+    		</h:column>
+    	
+    	</h:dataTable>
+    </p:panel>
+    	
+    </h:body>
+</html>
